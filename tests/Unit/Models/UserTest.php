@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-use App\Models\User;
+use Database\Factories\UserFactory;
 
 test('to array', function (): void {
-    $user = User::factory()->create()->refresh();
+    $user = UserFactory::new()
+        ->createOne()
+        ->refresh();
 
     expect(array_keys($user->toArray()))
         ->toBe([
