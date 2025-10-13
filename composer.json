@@ -10,13 +10,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.4.0",
+        "knuckleswtf/scribe": "^5.3",
         "laravel/framework": "^12.33.0",
         "laravel/sanctum": "^4.2",
         "nunomaduro/essentials": "^1.0.1"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.6",
-        "captainhook/captainhook-phar": "^5.25",
+        "captainhook/captainhook-phar": "^5.25.11",
         "driftingly/rector-laravel": "^2.0.7",
         "fakerphp/faker": "^1.24.1",
         "larastan/larastan": "^3.7.2",
