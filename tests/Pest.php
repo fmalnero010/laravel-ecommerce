@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
+use Database\Seeders\RoleSeeder;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Sleep;
 use Illuminate\Support\Str;
+use function Pest\Laravel\seed;
 
 pest()->extend(Tests\TestCase::class)
     ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
@@ -13,6 +15,8 @@ pest()->extend(Tests\TestCase::class)
         Str::createUuidsNormally();
         Http::preventStrayRequests();
         Sleep::fake();
+
+        seed(RoleSeeder::class);
 
         $this->freezeTime();
     })
