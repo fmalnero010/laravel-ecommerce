@@ -86,6 +86,7 @@
             "npx npm-check-updates -u"
         ],
         "lint": [
+            "@php artisan ide-helper:models --nowrite",
             "rector",
             "pint --parallel",
             "npm run lint"

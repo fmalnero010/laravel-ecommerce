@@ -11,6 +11,33 @@
  */
 
 
+namespace Src\Categories\Domain\Models{
+/**
+ * @property int $id
+ * @property string $name
+ * @property string $slug
+ * @property int|null $parent_id
+ * @property \Carbon\CarbonImmutable|null $created_at
+ * @property \Carbon\CarbonImmutable|null $updated_at
+ * @property \Carbon\CarbonImmutable|null $deleted_at
+ * @property-read Category|null $parent
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereParentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category withTrashed(bool $withTrashed = true)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category withoutTrashed()
+ */
+	final class Category extends \Eloquent {}
+}
+
 namespace Src\Users\Domain\Models{
 /**
  * @property int $id

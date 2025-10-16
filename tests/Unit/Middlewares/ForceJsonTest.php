@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Src\Security\Middlewares\ForceJson;
 
 describe('ForceJson Middleware', function (): void {
-    it('should set Accept header to application/json', function (): void {
+    test('should set Accept header to application/json', function (): void {
         $middleware = new ForceJson();
         $request = Request::create('/api/users');
 
@@ -27,7 +27,7 @@ describe('ForceJson Middleware', function (): void {
             ->toBe('application/json');
     });
 
-    it('should override existing Accept header', function (): void {
+    test('should override existing Accept header', function (): void {
         $middleware = new ForceJson();
         $request = Request::create('/api/users');
         $request->headers->set('Accept', 'text/html');

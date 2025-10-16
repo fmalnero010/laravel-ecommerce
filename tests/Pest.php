@@ -21,7 +21,7 @@ pest()->extend(Tests\TestCase::class)
 
         $this->freezeTime();
     })
-    ->in('Feature', 'Unit');
+    ->in('Feature', 'Integration', 'Unit');
 
 expect()->extend('toBeOne', fn () => $this->toBe(1));
 
