@@ -11,6 +11,19 @@
  */
 
 
+namespace Src\Categories\Domain\Models{
+/**
+ * @property-read Category|null $parent
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category withTrashed(bool $withTrashed = true)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Category withoutTrashed()
+ */
+	final class Category extends \Eloquent {}
+}
+
 namespace Src\Users\Domain\Models{
 /**
  * @property int $id
