@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Database\Factories\CategoryFactory;
 use Src\Categories\App\V1\Resources\CategoryResource;
+
 use function Pest\Laravel\getJson;
 
 describe('List Categories', function (): void {
