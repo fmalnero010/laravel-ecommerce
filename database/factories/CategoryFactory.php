@@ -27,4 +27,9 @@ final class CategoryFactory extends Factory
     {
         return $this->for($category ?? self::new(), 'parent');
     }
+
+    public function deleted(): self
+    {
+        return $this->set('deleted_at', now());
+    }
 }

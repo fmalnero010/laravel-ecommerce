@@ -13,7 +13,7 @@ final class UserSeeder extends Seeder
 {
     public function run(): void
     {
-        $this->command->info('Deleting users...');
+        $this->command->info('Deleting existing users...');
 
         User::query()->truncate();
 

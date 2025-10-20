@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Database\Factories\CategoryFactory;
+use Src\Categories\Domain\Models\Category;
 
 describe('Category Test', function (): void {
     test('can access to its parent', function (): void {
@@ -13,6 +14,7 @@ describe('Category Test', function (): void {
             ->withParent($expectedParent)
             ->createOne();
 
+        /** @var Category $parent */
         $parent = $categoryWithParent->parent;
 
         expect(

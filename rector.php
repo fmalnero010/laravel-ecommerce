@@ -47,4 +47,7 @@ return RectorConfig::configure()
         earlyReturn: true,
         strictBooleans: true,
     )
-    ->withPhpSets();
+    ->withPhpSets()
+    ->withCache(
+        cacheDirectory: __DIR__.'/storage/framework/cache/rector'
+    );
