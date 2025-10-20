@@ -18,5 +18,6 @@ parameters:
         - config
         - database/factories
         - database/migrations
+        - src/*/App/*/Resources
 
     level: max

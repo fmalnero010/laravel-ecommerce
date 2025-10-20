@@ -6,6 +6,7 @@ namespace Src\Categories\Domain\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 final class Category extends Model
@@ -14,7 +15,7 @@ final class Category extends Model
 
     protected $guarded = ['id'];
 
-    protected $with = ['parent'];
+    protected $with = ['children'];
 
     public function casts(): array
     {
@@ -29,5 +30,13 @@ final class Category extends Model
     public function parent(): BelongsTo
     {
         return $this->belongsTo(self::class);
+    }
+
+    /**
+     * @return HasMany<self, $this>
+     */
+    public function children(): HasMany
+    {
+        return $this->hasMany(self::class, 'parent_id');
     }
 }

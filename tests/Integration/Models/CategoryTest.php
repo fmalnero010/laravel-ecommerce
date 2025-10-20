@@ -14,11 +14,18 @@ describe('Category Test', function (): void {
             ->withParent($expectedParent)
             ->createOne();
 
-        /** @var Category $parent */
-        $parent = $categoryWithParent->parent;
+        expect($expectedParent->id)
+            ->toEqual($categoryWithParent->parent->id);
+    });
 
-        expect(
-            array_diff($expectedParent->toArray(), $parent->toArray())
-        )->toBeEmpty();
+    test('can access to its children', function (): void {
+        $categoryWithChildren = CategoryFactory::new()
+            ->withChildren()
+            ->createOne();
+
+        expect($categoryWithChildren->children)
+            ->toBeInstanceOf(Illuminate\Support\Collection::class)
+            ->and($categoryWithChildren->children->first())
+            ->toBeInstanceOf(Category::class);
     });
 });
