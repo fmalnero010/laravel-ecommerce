@@ -13,21 +13,13 @@ use Src\Categories\Domain\Models\Category;
  */
 final class CategoryResource extends JsonResource
 {
-    /**
-     * @return array{
-     *     id: int,
-     *     name: string,
-     *     slug: string,
-     *     parent?: CategoryResource
-     * }
-     */
     public function toArray(Request $request): array
     {
         return [
             'id' => $this->id,
             'name' => $this->name,
             'slug' => $this->slug,
-            'parent' => self::make($this->whenLoaded('parent')),
+            'children' => self::collection($this->whenLoaded('children')),
         ];
     }
 }

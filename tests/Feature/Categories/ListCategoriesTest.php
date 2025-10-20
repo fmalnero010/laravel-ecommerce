@@ -12,7 +12,7 @@ describe('List Categories', function (): void {
         $category = CategoryFactory::new()
             ->createOne();
 
-        $expectedResponse = CategoryResource::make($category->load('parent'))
+        $expectedResponse = CategoryResource::make($category->load('children'))
             ->response()
             ->getData(true);
 
@@ -23,12 +23,12 @@ describe('List Categories', function (): void {
             ->assertJsonPath('data.0', $expectedResponse['data']);
     });
 
-    test('returns a list of categories with its parents', function (): void {
+    test('returns a list of categories with its children', function (): void {
         $category = CategoryFactory::new()
             ->withParent()
             ->createOne();
 
-        $expectedResponse = CategoryResource::make($category->load('parent'))
+        $expectedResponse = CategoryResource::make($category->load('children'))
             ->response()
             ->getData(true);
 
