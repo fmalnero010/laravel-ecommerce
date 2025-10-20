@@ -14,7 +14,8 @@ final class CategorySeeder extends Seeder
     {
         $this->command->info('Deleting existing categories...');
 
-        Category::truncate();
+        Category::query()
+            ->truncate();
 
         $this->command->info('Seeding categories...');
         $this->command->info('Seeding categories without parent...');
