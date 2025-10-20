@@ -6,7 +6,7 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: api/user
+    uri: api/v1/categories
     metadata:
       groupName: Endpoints
       groupDescription: ''
@@ -29,8 +29,8 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":[{"id":1,"name":"Miss Annabel Daugherty PhD","slug":"miss-annabel-daugherty-phd"},{"id":2,"name":"Trevor Franecki","slug":"trevor-franecki"},{"id":3,"name":"Trinity Hodkiewicz I","slug":"trinity-hodkiewicz-i"},{"id":4,"name":"Joannie Koepp","slug":"joannie-koepp"},{"id":5,"name":"Prof. Alexis Mueller DDS","slug":"prof-alexis-mueller-dds"},{"id":6,"name":"Casimir Hickle","slug":"casimir-hickle"},{"id":7,"name":"Isabelle Trantow","slug":"isabelle-trantow"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

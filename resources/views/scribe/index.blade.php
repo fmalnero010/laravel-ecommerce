@@ -71,8 +71,8 @@
                     <a href="#endpoints">Endpoints</a>
                 </li>
                                     <ul id="tocify-subheader-endpoints" class="tocify-subheader">
-                                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-user">
-                                <a href="#endpoints-GETapi-user">GET api/user</a>
+                                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-categories">
+                                <a href="#endpoints-GETapi-v1-categories">GET api/v1/categories</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -85,7 +85,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: October 13, 2025</li>
+        <li>Last updated: October 20, 2025</li>
     </ul>
 </div>
 
@@ -108,27 +108,27 @@ You can switch the language used with the tabs at the top right (or from the nav
 
     
 
-                                <h2 id="endpoints-GETapi-user">GET api/user</h2>
+                                <h2 id="endpoints-GETapi-v1-categories">GET api/v1/categories</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-GETapi-user">
+<span id="example-requests-GETapi-v1-categories">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/user" \
+    --get "http://localhost/api/v1/categories" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/user"
+    "http://localhost/api/v1/categories"
 );
 
 const headers = {
@@ -143,9 +143,9 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-user">
+<span id="example-responses-GETapi-v1-categories">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -157,47 +157,83 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;Miss Annabel Daugherty PhD&quot;,
+            &quot;slug&quot;: &quot;miss-annabel-daugherty-phd&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;Trevor Franecki&quot;,
+            &quot;slug&quot;: &quot;trevor-franecki&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;Trinity Hodkiewicz I&quot;,
+            &quot;slug&quot;: &quot;trinity-hodkiewicz-i&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;name&quot;: &quot;Joannie Koepp&quot;,
+            &quot;slug&quot;: &quot;joannie-koepp&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;name&quot;: &quot;Prof. Alexis Mueller DDS&quot;,
+            &quot;slug&quot;: &quot;prof-alexis-mueller-dds&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;Casimir Hickle&quot;,
+            &quot;slug&quot;: &quot;casimir-hickle&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;Isabelle Trantow&quot;,
+            &quot;slug&quot;: &quot;isabelle-trantow&quot;
+        }
+    ]
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-user" hidden>
+<span id="execution-results-GETapi-v1-categories" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-user"></span>:
+                id="execution-response-status-GETapi-v1-categories"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-user"
+    <pre class="json"><code id="execution-response-content-GETapi-v1-categories"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-user" hidden>
+<span id="execution-error-GETapi-v1-categories" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-user">
+    <pre><code id="execution-error-message-GETapi-v1-categories">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-GETapi-user" data-method="GET"
-      data-path="api/user"
+<form id="form-GETapi-v1-categories" data-method="GET"
+      data-path="api/v1/categories"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-user', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-categories', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-user"
-                    onclick="tryItOut('GETapi-user');">Try it out ⚡
+                    id="btn-tryout-GETapi-v1-categories"
+                    onclick="tryItOut('GETapi-v1-categories');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-user"
-                    onclick="cancelTryOut('GETapi-user');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-v1-categories"
+                    onclick="cancelTryOut('GETapi-v1-categories');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-user"
+                    id="btn-executetryout-GETapi-v1-categories"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -205,7 +241,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/user</code></b>
+            <b><code>api/v1/categories</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -213,7 +249,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-user"
+                              name="Content-Type"                data-endpoint="GETapi-v1-categories"
                value="application/json"
                data-component="header">
     <br>
@@ -224,7 +260,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-user"
+                              name="Accept"                data-endpoint="GETapi-v1-categories"
                value="application/json"
                data-component="header">
     <br>
