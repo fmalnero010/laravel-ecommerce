@@ -21,5 +21,13 @@
                 "action": "docker compose exec -T laravel composer check:all"
             }
         ]
+    },
+    "post-merge": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "php artisan scribe:generate"
+            }
+        ]
     }
 }
