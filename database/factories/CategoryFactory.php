@@ -28,7 +28,7 @@ final class CategoryFactory extends Factory
         return $this->for($category ?? self::new(), 'parent');
     }
 
-    public function withChildren(CategoryFactory|null $category = null): self
+    public function withChildren(?self $category = null): self
     {
         return $this->has($category ?? self::new(), 'children');
     }
