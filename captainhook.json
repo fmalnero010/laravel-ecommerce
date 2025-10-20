@@ -26,7 +26,7 @@
         "enabled": true,
         "actions": [
             {
-                "action": "php artisan scribe:generate"
+                "action": "docker compose exec -T laravel php artisan scribe:generate"
             }
         ]
     }
