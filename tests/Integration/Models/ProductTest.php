@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Database\Factories\CategoryFactory;
 use Database\Factories\ProductFactory;
-use Illuminate\Support\Collection;
 use Src\Categories\Domain\Models\Category;
 
 describe('Product Test', function (): void {
@@ -33,7 +32,7 @@ describe('Product Test', function (): void {
         $category->refresh();
 
         expect($category->products)
-            ->toBeInstanceOf(Collection::class)
+            ->toBeInstanceOf(Illuminate\Support\Collection::class)
             ->and($category->products->count())
             ->toBe(3);
     });
