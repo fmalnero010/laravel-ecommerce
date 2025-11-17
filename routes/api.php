@@ -14,6 +14,6 @@ Route::prefix('v1')->group(function (): void {
 
     Route::prefix('products')->group(function (): void {
         Route::get('/', ListProductsController::class);
-        Route::get('/{slugOrId}', ShowProductController::class);
+        Route::get('/{product:sku}', ShowProductController::class);
     });
 });
