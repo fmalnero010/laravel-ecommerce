@@ -38,6 +38,14 @@ final class ProductSeeder extends Seeder
             ->recycle($categories)
             ->createMany(3);
 
+        $this->command->info('Seeding products in ARS...');
+
+        ProductFactory::new()
+            ->withCategory()
+            ->inArs()
+            ->recycle($categories)
+            ->createMany(3);
+
         $this->command->info('Seeding deleted products...');
 
         ProductFactory::new()

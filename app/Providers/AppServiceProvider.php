@@ -22,8 +22,6 @@ final class AppServiceProvider extends ServiceProvider
 
     private function bootModelsDefaults(): void
     {
-        Model::unguard();
-
         if (! App::isProduction()) {
             Model::preventLazyLoading();
             Model::preventSilentlyDiscardingAttributes();

@@ -5,18 +5,17 @@ declare(strict_types=1);
 namespace Src\Products\App\V1\Controllers;
 
 use Illuminate\Http\JsonResponse;
-use Src\Products\App\V1\Actions\ShowProductAction;
 use Src\Products\App\V1\Resources\ProductResource;
+use Src\Products\Domain\Models\Product;
 
 final class ShowProductController
 {
     public function __invoke(
-        string $slugOrId,
-        ShowProductAction $action,
+        Product $product,
     ): JsonResponse {
-        $product = $action->execute($slugOrId);
+        $product->load('category');
 
-        return (new ProductResource($product))
+        return ProductResource::make($product)
             ->response();
     }
 }
