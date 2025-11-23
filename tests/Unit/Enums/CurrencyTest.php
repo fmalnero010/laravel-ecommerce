@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Src\Shared\Domain\Enums\Currency;
+use Src\Products\Domain\Enums\Currency;
 
 describe('Currency Enum', function (): void {
     test('has dollar label', function (): void {

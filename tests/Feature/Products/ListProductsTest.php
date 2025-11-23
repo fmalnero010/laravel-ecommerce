@@ -10,9 +10,7 @@ use function Pest\Laravel\getJson;
 
 describe('List Products', function (): void {
     test('returns a list of products', function (): void {
-        $product = ProductFactory::new()
-            ->withCategory()
-            ->createOne();
+        $product = ProductFactory::new()->createOne();
 
         /** @var array<string, mixed> $expectedResponse */
         $expectedResponse = ProductResource::make($product->load('category'))

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Src\Shared\Domain\Enums;
+namespace Src\Products\Domain\Enums;
 
 enum Currency: string
 {

@@ -6,8 +6,8 @@ use Cknow\Money\Money;
 use Database\Factories\CategoryFactory;
 use Database\Factories\ProductFactory;
 use Src\Categories\Domain\Models\Category;
+use Src\Products\Domain\Enums\Currency;
 use Src\Products\Domain\Models\Product;
-use Src\Shared\Domain\Enums\Currency;
 
 test('can create product with all fields', function (): void {
     $category = CategoryFactory::new()->createOne();
@@ -16,7 +16,6 @@ test('can create product with all fields', function (): void {
         'name' => 'Test Product',
         'description' => 'Test Description',
         'price' => 1000,
-        'currency' => Currency::Usd,
         'sku' => 'TEST-SKU-001',
         'stock' => 10,
         'category_id' => $category->id,
@@ -26,7 +25,6 @@ test('can create product with all fields', function (): void {
         ->name->toBe('Test Product')
         ->description->toBe('Test Description')
         ->price->toBeInstanceOf(Money::class)
-        ->currency->toBe(Currency::Usd)
         ->sku->toBe('TEST-SKU-001')
         ->stock->toBe(10)
         ->category_id->toBe($category->id);
@@ -35,19 +33,18 @@ test('can create product with all fields', function (): void {
 test('price is cast to Money object', function (): void {
     $product = ProductFactory::new()->createOne([
         'price' => 5000,
-        'currency' => Currency::Usd,
     ]);
 
     expect($product->price)
         ->toBeInstanceOf(Money::class)
         ->getAmount()->toBe('5000')
-        ->getCurrency()->getCode()->toBe('USD');
+        ->getCurrency()->getCode()->toBe(Currency::Usd->value);
 });
 
 test('price can be set as integer and retrieved as Money', function (): void {
     $product = ProductFactory::new()->createOne();
 
-    $product->price = 7500;
+    $product->price = new Money(7500);
     $product->save();
 
     $product->refresh();
@@ -55,16 +52,6 @@ test('price can be set as integer and retrieved as Money', function (): void {
     expect($product->price)
         ->toBeInstanceOf(Money::class)
         ->getAmount()->toBe('7500');
-});
-
-test('currency is cast to Currency enum', function (): void {
-    $product = ProductFactory::new()->createOne([
-        'currency' => Currency::Ars,
-    ]);
-
-    expect($product->currency)
-        ->toBeInstanceOf(Currency::class)
-        ->toBe(Currency::Ars);
 });
 
 test('to array includes all fields', function (): void {
@@ -80,7 +67,6 @@ test('to array includes all fields', function (): void {
             'name',
             'description',
             'price',
-            'currency',
             'sku',
             'stock',
             'category_id',
@@ -88,8 +74,7 @@ test('to array includes all fields', function (): void {
             'updated_at',
             'deleted_at',
         ])
-        ->and($array['price'])->toBeArray()
-        ->and($array['currency'])->toBeString();
+        ->and($array['price'])->toBeArray();
 });
 
 test('belongs to category', function (): void {
@@ -130,7 +115,6 @@ test('factory creates product with valid data', function (): void {
         ->name->toBeString()
         ->description->toBeString()
         ->price->toBeInstanceOf(Money::class)
-        ->currency->toBeInstanceOf(Currency::class)
         ->sku->toBeString()->toStartWith('SKU-')
         ->stock->toBeInt()->toBeGreaterThanOrEqual(0)->toBeLessThanOrEqual(100)
         ->category->toBeInstanceOf(Category::class);
@@ -145,8 +129,8 @@ test('factory out of stock state sets stock to zero', function (): void {
 test('factory in ars state sets currency to ARS', function (): void {
     $product = ProductFactory::new()->inArs()->createOne();
 
-    expect($product->currency)->toBe(Currency::Ars)
-        ->and($product->price->getCurrency()->getCode())->toBe('ARS');
+    expect($product->price->getCurrency()->getCode())
+        ->toBe(Currency::Ars->value);
 });
 
 test('factory deleted state soft deletes product', function (): void {

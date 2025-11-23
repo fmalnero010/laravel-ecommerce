@@ -10,14 +10,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Src\Categories\Domain\Models\Category;
-use Src\Shared\Domain\Enums\Currency;
 
 /**
  * @property int $id
  * @property string $name
  * @property string|null $description
  * @property Money $price
- * @property Currency $currency
+ * @property string $currency
  * @property string $sku
  * @property int $stock
  * @property int $category_id
@@ -56,7 +55,6 @@ final class Product extends Model
     {
         return [
             'price' => MoneyIntegerCast::class.':currency',
-            'currency' => Currency::class,
             'stock' => 'integer',
             'deleted_at' => 'immutable_datetime',
         ];

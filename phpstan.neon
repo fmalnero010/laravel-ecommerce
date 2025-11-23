@@ -19,5 +19,6 @@ parameters:
         - database/factories
         - database/migrations
         - src/*/App/*/Resources
+        - tests
 
     level: max

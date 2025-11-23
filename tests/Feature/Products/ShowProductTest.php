@@ -10,9 +10,7 @@ use function Pest\Laravel\getJson;
 
 describe('Show Product', function (): void {
     test('returns a product by id', function (): void {
-        $product = ProductFactory::new()
-            ->withCategory()
-            ->createOne();
+        $product = ProductFactory::new()->createOne();
 
         /** @var array<string, mixed> $expectedResponse */
         $expectedResponse = ProductResource::make($product->load('category'))
@@ -27,9 +25,7 @@ describe('Show Product', function (): void {
     });
 
     test('returns a product by slug', function (): void {
-        $product = ProductFactory::new()
-            ->withCategory()
-            ->createOne();
+        $product = ProductFactory::new()->createOne();
 
         /** @var array<string, mixed> $expectedResponse */
         $expectedResponse = ProductResource::make($product->load('category'))
