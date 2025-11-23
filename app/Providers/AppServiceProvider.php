@@ -7,12 +7,13 @@ namespace App\Providers;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
+use Src\Shared\Exceptions\ExceptionHandler;
 
 final class AppServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        //
+        $this->app->singleton(ExceptionHandler::class);
     }
 
     public function boot(): void
@@ -22,8 +23,6 @@ final class AppServiceProvider extends ServiceProvider
 
     private function bootModelsDefaults(): void
     {
-        Model::unguard();
-
         if (! App::isProduction()) {
             Model::preventLazyLoading();
             Model::preventSilentlyDiscardingAttributes();
