@@ -9,7 +9,7 @@ use Src\Products\App\V1\Resources\ProductResource;
 use function Pest\Laravel\getJson;
 
 describe('List Products', function (): void {
-    test('returns a list of products', function (): void {
+    test('returns a paginated list of products', function (): void {
         $product = ProductFactory::new()->createOne();
 
         /** @var array<string, mixed> $expectedResponse */
@@ -21,6 +21,7 @@ describe('List Products', function (): void {
 
         $response
             ->assertOk()
+            ->assertJsonStructure(['data', 'meta', 'links'])
             ->assertJsonPath('data.0', Arr::array($expectedResponse, 'data'));
     });
 
