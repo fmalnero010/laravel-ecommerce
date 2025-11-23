@@ -15,6 +15,7 @@ final class ListCategoriesAction
     public function execute(): Collection
     {
         return Category::query()
+            ->with('children')
             ->get();
     }
 }

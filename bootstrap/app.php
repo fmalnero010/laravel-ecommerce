@@ -5,8 +5,10 @@ declare(strict_types=1);
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use Illuminate\Foundation\Exceptions\Handler;
 use Illuminate\Http\Request;
 use Src\Security\Middlewares\ForceJson;
+use Src\Shared\Exceptions\ExceptionHandler;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -19,8 +21,9 @@ return Application::configure(basePath: dirname(__DIR__))
             ForceJson::class,
         ]);
     })
+    ->withBindings([Handler::class => ExceptionHandler::class])
     ->withExceptions(function (Exceptions $exceptions): void {
-        $exceptions->shouldRenderJsonWhen(function (Request $request, Throwable $e) {
+        $exceptions->shouldRenderJsonWhen(function (Request $request): bool {
             if ($request->is('api/*')) {
                 return true;
             }

@@ -28,7 +28,98 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":1,"name":"Miss Annabel Daugherty PhD","slug":"miss-annabel-daugherty-phd"},{"id":2,"name":"Trevor Franecki","slug":"trevor-franecki"},{"id":3,"name":"Trinity Hodkiewicz I","slug":"trinity-hodkiewicz-i"},{"id":4,"name":"Joannie Koepp","slug":"joannie-koepp"},{"id":5,"name":"Prof. Alexis Mueller DDS","slug":"prof-alexis-mueller-dds"},{"id":6,"name":"Casimir Hickle","slug":"casimir-hickle"},{"id":7,"name":"Isabelle Trantow","slug":"isabelle-trantow"}]}'
+        content: '{"data":[{"id":1,"name":"Lou Sauer","slug":"lou-sauer","children":[{"id":6,"name":"Hermina VonRueden","slug":"hermina-vonrueden","children":[]},{"id":7,"name":"Beth Gislason","slug":"beth-gislason","children":[]}]},{"id":2,"name":"Ms. Amie Block","slug":"ms-amie-block","children":[]},{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]},{"id":4,"name":"Dayana Frami","slug":"dayana-frami","children":[]},{"id":5,"name":"Myra Paucek","slug":"myra-paucek","children":[]},{"id":6,"name":"Hermina VonRueden","slug":"hermina-vonrueden","children":[]},{"id":7,"name":"Beth Gislason","slug":"beth-gislason","children":[]}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/products
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":1,"name":"aspernatur odit rem","description":"Nihil quidem repellendus placeat. Nemo nihil nostrum molestias. Ab voluptatem optio fugiat perferendis necessitatibus. Ut nobis velit hic. Voluptatem consequuntur neque corporis.","price":"697.116,85","currency":"USD","sku":"SKU-3647-dcez","stock":14,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":2,"name":"ea occaecati necessitatibus","description":"Ut expedita nihil nesciunt sint accusantium sint. Quia odio consequatur error rem voluptas libero quas. Sed expedita odio aperiam illum. Quae itaque autem facere libero. Quia perspiciatis veritatis sit et qui illum voluptate fuga.","price":"967.099,81","currency":"USD","sku":"SKU-7761-tjnu","stock":82,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":3,"name":"voluptatem quas et","description":"Fugit assumenda molestiae neque id. Nam cumque id aut quia rerum quae velit. Nemo tenetur fuga quis voluptates repudiandae.","price":"233.097,59","currency":"USD","sku":"SKU-6999-jbiw","stock":37,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":4,"name":"aliquid quae sit","description":"Dolore sit veritatis est ut nisi est quos dicta. Occaecati totam et consequatur porro placeat iusto et incidunt. Fuga explicabo quia suscipit exercitationem. Omnis laborum est soluta qui nihil et dolorum qui.","price":"346.911,31","currency":"USD","sku":"SKU-7693-iasr","stock":92,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":5,"name":"neque voluptate et","description":"Sed quia perferendis excepturi animi doloremque. Necessitatibus magni voluptas earum. Nostrum rerum iste voluptatem suscipit.","price":"228.018,92","currency":"USD","sku":"SKU-6219-uujt","stock":72,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":6,"name":"placeat ipsam omnis","description":"Et omnis quaerat iste eos veritatis iste. Sit quidem sed consequatur magnam velit.","price":"405.387,38","currency":"USD","sku":"SKU-6591-jkdw","stock":56,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":7,"name":"consequatur nihil hic","description":"Culpa aut error sed distinctio et. Minima sit aliquam quis esse. Quis molestiae dolores est quibusdam ea praesentium et rem. Asperiores et tempore qui velit quis pariatur.","price":"131.440,06","currency":"USD","sku":"SKU-2530-smxn","stock":37,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":8,"name":"sed nobis quia","description":"Error officiis alias porro ea qui modi. Est quo natus quia ratione.","price":"780.397,28","currency":"USD","sku":"SKU-3080-gman","stock":1,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":9,"name":"incidunt et nesciunt","description":"Cupiditate omnis aliquam placeat eius. Quia commodi cum soluta quaerat repudiandae eligendi quam. Sunt dolor pariatur odit voluptatem quia.","price":"190.016,84","currency":"USD","sku":"SKU-0721-wosg","stock":23,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":10,"name":"assumenda necessitatibus iusto","description":"Voluptatum qui aut vitae et. Iusto in explicabo dolores et et excepturi animi ipsam. Ipsum architecto debitis occaecati omnis quis possimus occaecati. Accusantium alias eum voluptatibus esse ullam modi nisi.","price":"651.408,67","currency":"USD","sku":"SKU-8481-ucqa","stock":40,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":11,"name":"veniam rerum ut","description":"Quia voluptatibus similique id vel ipsum. Repudiandae ut aliquid alias reiciendis neque. Similique quas placeat pariatur placeat. Debitis consequatur veritatis esse aut voluptas.","price":"935.946,70","currency":"USD","sku":"SKU-8051-ygae","stock":81,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":12,"name":"quo veniam laudantium","description":"Quis earum debitis sed consectetur laboriosam. Voluptates eveniet consequatur adipisci sequi repellat. Voluptatem porro illo molestiae voluptas dolorum dolor qui ut.","price":"551.074,81","currency":"USD","sku":"SKU-2103-zyoj","stock":50,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":13,"name":"facere deleniti sequi","description":"Totam et et aspernatur laborum molestiae et quia. Vero et nesciunt consequatur blanditiis laudantium ea. Eos voluptatem magnam ad ut.","price":"289.067,00","currency":"USD","sku":"SKU-9094-scwp","stock":21,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":14,"name":"ad eos nobis","description":"Et sunt facilis at et. Nobis et consectetur et vel. Excepturi consequatur dolorem et minus ipsa. Vel beatae debitis dolorem dolorum consequuntur.","price":"185.297,10","currency":"USD","sku":"SKU-1308-pmam","stock":13,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":15,"name":"in enim ut","description":"Saepe voluptas quo nostrum adipisci. Atque ab dolor at qui. Aut autem architecto voluptatibus quo. Sed accusantium tenetur earum error voluptas.","price":"274.779,07","currency":"USD","sku":"SKU-3900-jgwo","stock":24,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":16,"name":"amet quis veritatis","description":"Et omnis beatae voluptas repudiandae exercitationem molestias. Nam voluptate numquam magni omnis quae possimus. Voluptas exercitationem voluptas quisquam adipisci. Eveniet ipsum ut aut dolorum ut.","price":"314.193,79","currency":"USD","sku":"SKU-6778-ytkp","stock":17,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":17,"name":"quam numquam mollitia","description":"Et aut quia assumenda alias repellendus. Libero aliquam labore ipsam rem. Porro ratione fuga error ducimus occaecati.","price":"268.850,50","currency":"USD","sku":"SKU-3395-tikn","stock":3,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":18,"name":"debitis in blanditiis","description":"Eos praesentium ea qui non dolorum. A deserunt et vero doloribus occaecati provident. Fugiat nobis aspernatur sint ut.","price":"592.709,19","currency":"USD","sku":"SKU-8049-asge","stock":24,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":19,"name":"dolorem quisquam tempore","description":"Eligendi velit a qui laudantium. Sed neque omnis maxime. Nulla alias in ea at. Et laboriosam et velit architecto molestiae fugit cupiditate nam.","price":"519.619,82","currency":"USD","sku":"SKU-2669-gxpg","stock":58,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":20,"name":"officiis inventore facilis","description":"Voluptatem ratione debitis unde tenetur repellat veritatis qui. Sunt eum exercitationem culpa nobis ut nesciunt. Iusto eum fuga tempore voluptas. In eum facere repudiandae distinctio voluptate delectus.","price":"395.309,31","currency":"USD","sku":"SKU-6439-qrtu","stock":86,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":21,"name":"nam numquam a","description":"Adipisci temporibus voluptatem dolorum fugit maiores accusantium. Eum ut commodi molestias repellendus dolorum facilis. Harum et temporibus veniam reiciendis sit voluptates quis. Qui veniam harum quia quas eos odio.","price":"284.229,62","currency":"USD","sku":"SKU-4789-nojx","stock":0,"category":{"id":4,"name":"Dayana Frami","slug":"dayana-frami","children":[]}},{"id":22,"name":"minima modi delectus","description":"Repellendus vero nulla in dolores. Consequatur nihil accusamus voluptatum vel. Ut dolorum est voluptatem magni rerum aut eum.","price":"604.590,43","currency":"USD","sku":"SKU-4605-ksim","stock":0,"category":{"id":4,"name":"Dayana Frami","slug":"dayana-frami","children":[]}},{"id":23,"name":"voluptas quia quas","description":"Et et et quisquam perferendis laborum. Deleniti alias laborum autem maiores. Est ab consequatur minus pariatur quis debitis.","price":"436.386,59","currency":"USD","sku":"SKU-6654-qydj","stock":0,"category":{"id":4,"name":"Dayana Frami","slug":"dayana-frami","children":[]}},{"id":24,"name":"quis quia corporis","description":"Et cupiditate reiciendis perspiciatis occaecati. Et id asperiores voluptatem saepe. Nulla sed quis amet.","price":"491.825,40","currency":"ARS","sku":"SKU-8007-dcsm","stock":65,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":25,"name":"qui eos aut","description":"Officiis iste consequatur amet in non. Sunt quos nemo enim quia quam non. Omnis et vel quibusdam ut perferendis fuga.","price":"847.788,13","currency":"ARS","sku":"SKU-5814-pzwi","stock":57,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}},{"id":26,"name":"perferendis rerum et","description":"Quidem est corrupti est quo voluptates deleniti recusandae. Et qui tenetur dolore iusto quia nemo id vitae. Et inventore est eos quam vel quidem a autem. Eum voluptas sint aperiam. Qui sit amet ea facilis ea ipsa.","price":"429.946,90","currency":"ARS","sku":"SKU-5280-ffyo","stock":31,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/products/{product_sku}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      product_sku:
+        name: product_sku
+        description: ''
+        required: true
+        example: SKU-3647-dcez
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      product_sku: SKU-3647-dcez
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":1,"name":"aspernatur odit rem","description":"Nihil quidem repellendus placeat. Nemo nihil nostrum molestias. Ab voluptatem optio fugiat perferendis necessitatibus. Ut nobis velit hic. Voluptatem consequuntur neque corporis.","price":"697.116,85","currency":"USD","sku":"SKU-3647-dcez","stock":14,"category":{"id":3,"name":"Ivah Wuckert","slug":"ivah-wuckert","children":[]}}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
