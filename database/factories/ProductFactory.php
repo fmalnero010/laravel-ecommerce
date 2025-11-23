@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
+use Cknow\Money\Money;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Arr;
 use Src\Categories\Domain\Models\Category;
+use Src\Products\Domain\Enums\Currency;
 use Src\Products\Domain\Models\Product;
-use Src\Shared\Domain\Enums\Currency;
 
 /**
  * @extends Factory<Product>
@@ -19,24 +21,21 @@ final class ProductFactory extends Factory
     public function definition(): array
     {
         $name = fake()->words(3, true);
+        $priceAsFloat = fake()->randomFloat(2, 100, 1000);
 
         return [
             'name' => $name,
             'description' => fake()->paragraph(),
-            'price' => fake()->numberBetween(100, 100000000),
-            'currency' => Currency::Usd,
+            'price' => new Money($priceAsFloat),
             'sku' => fake()->unique()->bothify('SKU-####-????'),
             'stock' => fake()->numberBetween(0, 100),
             'category_id' => CategoryFactory::new(),
         ];
     }
 
-    public function withCategory(Category|CategoryFactory|null $category = null): self
+    public function withCategory(Category|CategoryFactory $category): self
     {
-        return $this->for(
-            $category ?? CategoryFactory::new(),
-            'category'
-        );
+        return $this->for($category, 'category');
     }
 
     public function outOfStock(): self
@@ -46,7 +45,14 @@ final class ProductFactory extends Factory
 
     public function inArs(): self
     {
-        return $this->set('currency', Currency::Ars);
+        return $this->state(function (array $attributes): array {
+            /** @var Money $price */
+            $price = Arr::get($attributes, 'price');
+
+            return [
+                'price' => $price->setCurrency(new \Money\Currency(Currency::Ars->value)),
+            ];
+        });
     }
 
     public function deleted(): self
