@@ -15,8 +15,8 @@ use Src\Products\Domain\Models\Product;
  * @property string $name
  * @property string $slug
  * @property int|null $parent_id
- * @property \Carbon\CarbonImmutable|null $created_at
- * @property \Carbon\CarbonImmutable|null $updated_at
+ * @property \Carbon\CarbonImmutable $created_at
+ * @property \Carbon\CarbonImmutable $updated_at
  * @property \Carbon\CarbonImmutable|null $deleted_at
  * @property-read \Illuminate\Database\Eloquent\Collection<int, Category> $children
  * @property-read int|null $children_count

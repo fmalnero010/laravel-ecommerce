@@ -10,26 +10,25 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('products', function (Blueprint $table): void {
+        Schema::create('cart_items', function (Blueprint $table): void {
             $table->id();
-            $table->string('name');
-            $table->text('description')->nullable();
-            $table->unsignedInteger('price');
-            $table->string('currency');
-            $table->string('sku')->unique();
-            $table->integer('stock')->default(0);
-            $table->foreignId('category_id')
+            $table->foreignId('cart_id')
+                ->constrained()
+                ->cascadeOnUpdate();
+            $table->foreignId('product_id')
                 ->constrained()
                 ->cascadeOnUpdate()
                 ->restrictOnDelete();
+            $table->unsignedTinyInteger('quantity')->default(1);
+            $table->unsignedInteger('price_snapshot');
+            $table->string('currency');
             $table->timestamp('created_at');
             $table->timestamp('updated_at');
-            $table->softDeletes();
         });
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('cart_items');
     }
 };

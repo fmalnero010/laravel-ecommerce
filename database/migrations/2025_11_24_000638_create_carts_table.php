@@ -10,23 +10,25 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('categories', function (Blueprint $table): void {
+        Schema::create('carts', function (Blueprint $table): void {
             $table->id();
-            $table->string('name');
-            $table->string('slug')->unique();
-            $table->foreignId('parent_id')
+            $table->foreignId('user_id')
                 ->nullable()
-                ->constrained('categories')
-                ->cascadeOnUpdate()
-                ->cascadeOnDelete();
+                ->constrained()
+                ->cascadeOnUpdate();
+            $table->uuid('session_id')
+                ->nullable()
+                ->index();
+            $table->string('status');
             $table->timestamp('created_at');
             $table->timestamp('updated_at');
-            $table->softDeletes();
+
+            $table->index(['session_id', 'status']);
         });
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('carts');
     }
 };

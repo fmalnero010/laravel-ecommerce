@@ -8,7 +8,7 @@ use Illuminate\Http\JsonResponse;
 use Src\Products\App\V1\Resources\ProductResource;
 use Src\Products\Domain\Models\Product;
 
-final class ShowProductController
+final class GetProductController
 {
     public function __invoke(
         Product $product,

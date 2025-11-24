@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace Src\Users\Domain\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
+use Src\Carts\Domain\Enums\CartStatus;
+use Src\Carts\Domain\Models\Cart;
 
 /**
  * @property int $id
@@ -20,6 +24,9 @@ use Spatie\Permission\Traits\HasRoles;
  * @property \Carbon\CarbonImmutable|null $created_at
  * @property \Carbon\CarbonImmutable|null $updated_at
  * @property \Carbon\CarbonImmutable|null $deleted_at
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, Cart> $carts
+ * @property-read int|null $carts_count
+ * @property-read Cart|null $currentCart
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection<int, \Illuminate\Notifications\DatabaseNotification> $notifications
  * @property-read int|null $notifications_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Spatie\Permission\Models\Permission> $permissions
@@ -74,5 +81,22 @@ final class User extends Authenticatable implements MustVerifyEmail
             'password' => 'hashed',
             'deleted_at' => 'immutable_datetime',
         ];
+    }
+
+    /**
+     * @return HasMany<Cart, $this>
+     */
+    public function carts(): HasMany
+    {
+        return $this->hasMany(Cart::class);
+    }
+
+    /**
+     * @return HasOne<Cart, $this>
+     */
+    public function currentCart(): HasOne
+    {
+        return $this->hasOne(Cart::class)
+            ->where('carts.status', CartStatus::Active);
     }
 }
