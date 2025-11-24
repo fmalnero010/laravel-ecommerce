@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Database\Seeders;
 
 use Database\Factories\CartFactory;
+use Database\Factories\CartItemFactory;
 use Illuminate\Database\Seeder;
 use Src\Carts\Domain\Models\Cart;
 
@@ -39,6 +40,15 @@ final class CartSeeder extends Seeder
 
         CartFactory::new()
             ->completed()
+            ->createMany(5);
+
+        $this->command->line('Seeding carts with items...');
+
+        CartFactory::new()
+            ->hasItems(
+                CartItemFactory::new()
+                    ->count(5)
+            )
             ->createMany(5);
     }
 }

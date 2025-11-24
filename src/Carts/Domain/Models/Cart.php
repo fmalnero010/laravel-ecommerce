@@ -6,6 +6,7 @@ namespace Src\Carts\Domain\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Src\Carts\Domain\Enums\CartStatus;
 use Src\Users\Domain\Models\User;
 
@@ -16,6 +17,8 @@ use Src\Users\Domain\Models\User;
  * @property CartStatus $status
  * @property \Carbon\CarbonImmutable $created_at
  * @property \Carbon\CarbonImmutable $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, CartItem> $items
+ * @property-read int|null $items_count
  * @property-read User|null $user
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Cart newModelQuery()
@@ -47,5 +50,13 @@ final class Cart extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    /**
+     * @return HasMany<CartItem, $this>
+     */
+    public function items(): HasMany
+    {
+        return $this->hasMany(CartItem::class);
     }
 }

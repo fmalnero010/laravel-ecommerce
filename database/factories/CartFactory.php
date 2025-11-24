@@ -50,4 +50,9 @@ final class CartFactory extends Factory
     {
         return $this->set('status', CartStatus::Completed);
     }
+
+    public function hasItems(?CartItemFactory $cartItemFactory = null): self
+    {
+        return $this->has($cartItemFactory ?? CartItemFactory::new(), 'items');
+    }
 }

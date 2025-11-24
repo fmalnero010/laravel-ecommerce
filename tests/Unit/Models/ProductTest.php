@@ -44,7 +44,7 @@ test('price is cast to Money object', function (): void {
 test('price can be set as integer and retrieved as Money', function (): void {
     $product = ProductFactory::new()->createOne();
 
-    $product->price = new Money(7500);
+    $product->price = new Money(7500, new \Money\Currency(Currency::Usd->value));
     $product->save();
 
     $product->refresh();

@@ -57,6 +57,7 @@ final class Product extends Model
             'price' => MoneyIntegerCast::class.':currency',
             'stock' => 'integer',
             'deleted_at' => 'immutable_datetime',
+            // NO castes currency a enum aquí, MoneyIntegerCast lo necesita como string
         ];
     }
 

@@ -52,6 +52,6 @@ test('current cart relation is accessible and works', function (): void {
 
     expect($user->currentCart)
         ->toBeInstanceOf(Cart::class)
-        ->and($user->currentCart->getAttributes())
+        ->and($user->currentCart?->getAttributes())
         ->toBe($activeCart->refresh()->getAttributes());
 });
