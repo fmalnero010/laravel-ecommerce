@@ -22,7 +22,8 @@ return new class extends Migration
                 ->constrained()
                 ->cascadeOnUpdate()
                 ->restrictOnDelete();
-            $table->timestamps();
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
             $table->softDeletes();
         });
     }

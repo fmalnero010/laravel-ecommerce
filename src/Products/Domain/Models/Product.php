@@ -20,8 +20,8 @@ use Src\Categories\Domain\Models\Category;
  * @property string $sku
  * @property int $stock
  * @property int $category_id
- * @property \Carbon\CarbonImmutable|null $created_at
- * @property \Carbon\CarbonImmutable|null $updated_at
+ * @property \Carbon\CarbonImmutable $created_at
+ * @property \Carbon\CarbonImmutable $updated_at
  * @property \Carbon\CarbonImmutable|null $deleted_at
  * @property-read Category $category
  *

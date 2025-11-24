@@ -91,7 +91,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: November 17, 2025</li>
+        <li>Last updated: November 23, 2025</li>
     </ul>
 </div>
 
@@ -166,57 +166,55 @@ access-control-allow-origin: *
     &quot;data&quot;: [
         {
             &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;Lou Sauer&quot;,
-            &quot;slug&quot;: &quot;lou-sauer&quot;,
-            &quot;children&quot;: [
-                {
-                    &quot;id&quot;: 6,
-                    &quot;name&quot;: &quot;Hermina VonRueden&quot;,
-                    &quot;slug&quot;: &quot;hermina-vonrueden&quot;,
-                    &quot;children&quot;: []
-                },
-                {
-                    &quot;id&quot;: 7,
-                    &quot;name&quot;: &quot;Beth Gislason&quot;,
-                    &quot;slug&quot;: &quot;beth-gislason&quot;,
-                    &quot;children&quot;: []
-                }
-            ]
+            &quot;name&quot;: &quot;Shyanne Wiegand&quot;,
+            &quot;slug&quot;: &quot;shyanne-wiegand&quot;,
+            &quot;children&quot;: []
         },
         {
             &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;Ms. Amie Block&quot;,
-            &quot;slug&quot;: &quot;ms-amie-block&quot;,
+            &quot;name&quot;: &quot;Marilie Boehm&quot;,
+            &quot;slug&quot;: &quot;marilie-boehm&quot;,
             &quot;children&quot;: []
         },
         {
             &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-            &quot;slug&quot;: &quot;ivah-wuckert&quot;,
+            &quot;name&quot;: &quot;Lina Lindgren&quot;,
+            &quot;slug&quot;: &quot;lina-lindgren&quot;,
             &quot;children&quot;: []
         },
         {
             &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;Dayana Frami&quot;,
-            &quot;slug&quot;: &quot;dayana-frami&quot;,
+            &quot;name&quot;: &quot;Enid Raynor&quot;,
+            &quot;slug&quot;: &quot;enid-raynor&quot;,
             &quot;children&quot;: []
         },
         {
             &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;Myra Paucek&quot;,
-            &quot;slug&quot;: &quot;myra-paucek&quot;,
-            &quot;children&quot;: []
+            &quot;name&quot;: &quot;Malika Osinski&quot;,
+            &quot;slug&quot;: &quot;malika-osinski&quot;,
+            &quot;children&quot;: [
+                {
+                    &quot;id&quot;: 6,
+                    &quot;name&quot;: &quot;Fannie D&#039;Amore&quot;,
+                    &quot;slug&quot;: &quot;fannie-damore&quot;
+                },
+                {
+                    &quot;id&quot;: 7,
+                    &quot;name&quot;: &quot;Gia Flatley&quot;,
+                    &quot;slug&quot;: &quot;gia-flatley&quot;
+                }
+            ]
         },
         {
             &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;Hermina VonRueden&quot;,
-            &quot;slug&quot;: &quot;hermina-vonrueden&quot;,
+            &quot;name&quot;: &quot;Fannie D&#039;Amore&quot;,
+            &quot;slug&quot;: &quot;fannie-damore&quot;,
             &quot;children&quot;: []
         },
         {
             &quot;id&quot;: 7,
-            &quot;name&quot;: &quot;Beth Gislason&quot;,
-            &quot;slug&quot;: &quot;beth-gislason&quot;,
+            &quot;name&quot;: &quot;Gia Flatley&quot;,
+            &quot;slug&quot;: &quot;gia-flatley&quot;,
             &quot;children&quot;: []
         }
     ]
@@ -346,395 +344,301 @@ access-control-allow-origin: *
     &quot;data&quot;: [
         {
             &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;aspernatur odit rem&quot;,
-            &quot;description&quot;: &quot;Nihil quidem repellendus placeat. Nemo nihil nostrum molestias. Ab voluptatem optio fugiat perferendis necessitatibus. Ut nobis velit hic. Voluptatem consequuntur neque corporis.&quot;,
-            &quot;price&quot;: &quot;697.116,85&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-3647-dcez&quot;,
-            &quot;stock&quot;: 14,
+            &quot;name&quot;: &quot;dolores ut consequatur&quot;,
+            &quot;description&quot;: &quot;Quia ipsum assumenda est neque. Vero neque vel nihil dolorum. Et numquam repudiandae ipsa quos quis sapiente tempora. Assumenda velit ab rerum corrupti sit ullam.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;80928&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$809.28&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-4504-txyn&quot;,
+            &quot;stock&quot;: 90,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 7,
+                &quot;name&quot;: &quot;Gia Flatley&quot;,
+                &quot;slug&quot;: &quot;gia-flatley&quot;
             }
         },
         {
             &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;ea occaecati necessitatibus&quot;,
-            &quot;description&quot;: &quot;Ut expedita nihil nesciunt sint accusantium sint. Quia odio consequatur error rem voluptas libero quas. Sed expedita odio aperiam illum. Quae itaque autem facere libero. Quia perspiciatis veritatis sit et qui illum voluptate fuga.&quot;,
-            &quot;price&quot;: &quot;967.099,81&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-7761-tjnu&quot;,
-            &quot;stock&quot;: 82,
+            &quot;name&quot;: &quot;provident ad voluptatem&quot;,
+            &quot;description&quot;: &quot;Et et accusamus et. Eveniet quaerat non similique et soluta. Alias molestiae voluptatem eum eligendi voluptas ut.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;10958&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$109.58&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-5983-whxn&quot;,
+            &quot;stock&quot;: 8,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 4,
+                &quot;name&quot;: &quot;Enid Raynor&quot;,
+                &quot;slug&quot;: &quot;enid-raynor&quot;
             }
         },
         {
             &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;voluptatem quas et&quot;,
-            &quot;description&quot;: &quot;Fugit assumenda molestiae neque id. Nam cumque id aut quia rerum quae velit. Nemo tenetur fuga quis voluptates repudiandae.&quot;,
-            &quot;price&quot;: &quot;233.097,59&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-6999-jbiw&quot;,
-            &quot;stock&quot;: 37,
+            &quot;name&quot;: &quot;et enim quia&quot;,
+            &quot;description&quot;: &quot;Nisi dolores incidunt laboriosam pariatur eius aliquam itaque. Aut ea ut aut ut harum. Consectetur pariatur veritatis ut non est. Voluptatum consectetur qui recusandae.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;82904&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$829.04&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-8050-ogim&quot;,
+            &quot;stock&quot;: 92,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 5,
+                &quot;name&quot;: &quot;Malika Osinski&quot;,
+                &quot;slug&quot;: &quot;malika-osinski&quot;
             }
         },
         {
             &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;aliquid quae sit&quot;,
-            &quot;description&quot;: &quot;Dolore sit veritatis est ut nisi est quos dicta. Occaecati totam et consequatur porro placeat iusto et incidunt. Fuga explicabo quia suscipit exercitationem. Omnis laborum est soluta qui nihil et dolorum qui.&quot;,
-            &quot;price&quot;: &quot;346.911,31&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-7693-iasr&quot;,
-            &quot;stock&quot;: 92,
+            &quot;name&quot;: &quot;sunt est quidem&quot;,
+            &quot;description&quot;: &quot;Dolor excepturi rerum aut numquam pariatur pariatur. Omnis esse labore et nihil voluptatum eveniet. Blanditiis aut fugiat minus iste libero autem.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;64696&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$646.96&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-5092-dddn&quot;,
+            &quot;stock&quot;: 75,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 6,
+                &quot;name&quot;: &quot;Fannie D&#039;Amore&quot;,
+                &quot;slug&quot;: &quot;fannie-damore&quot;
             }
         },
         {
             &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;neque voluptate et&quot;,
-            &quot;description&quot;: &quot;Sed quia perferendis excepturi animi doloremque. Necessitatibus magni voluptas earum. Nostrum rerum iste voluptatem suscipit.&quot;,
-            &quot;price&quot;: &quot;228.018,92&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-6219-uujt&quot;,
-            &quot;stock&quot;: 72,
+            &quot;name&quot;: &quot;suscipit non ut&quot;,
+            &quot;description&quot;: &quot;Eaque quo sequi iusto et cum. Quaerat quo et blanditiis est consequuntur et est labore. Ex adipisci laboriosam sed aut id sequi voluptas reiciendis.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;76507&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$765.07&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-7813-yoot&quot;,
+            &quot;stock&quot;: 91,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 5,
+                &quot;name&quot;: &quot;Malika Osinski&quot;,
+                &quot;slug&quot;: &quot;malika-osinski&quot;
             }
         },
         {
             &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;placeat ipsam omnis&quot;,
-            &quot;description&quot;: &quot;Et omnis quaerat iste eos veritatis iste. Sit quidem sed consequatur magnam velit.&quot;,
-            &quot;price&quot;: &quot;405.387,38&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-6591-jkdw&quot;,
+            &quot;name&quot;: &quot;commodi veniam incidunt&quot;,
+            &quot;description&quot;: &quot;Ea similique necessitatibus non et. Officiis autem dolor sit voluptatem nihil eum architecto. Magnam dolor id quod est.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;33735&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$337.35&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-7355-eamx&quot;,
             &quot;stock&quot;: 56,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 5,
+                &quot;name&quot;: &quot;Malika Osinski&quot;,
+                &quot;slug&quot;: &quot;malika-osinski&quot;
             }
         },
         {
             &quot;id&quot;: 7,
-            &quot;name&quot;: &quot;consequatur nihil hic&quot;,
-            &quot;description&quot;: &quot;Culpa aut error sed distinctio et. Minima sit aliquam quis esse. Quis molestiae dolores est quibusdam ea praesentium et rem. Asperiores et tempore qui velit quis pariatur.&quot;,
-            &quot;price&quot;: &quot;131.440,06&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-2530-smxn&quot;,
-            &quot;stock&quot;: 37,
+            &quot;name&quot;: &quot;voluptatem ut consequuntur&quot;,
+            &quot;description&quot;: &quot;Sunt magnam sint esse facilis. Alias accusamus quo recusandae temporibus.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;79544&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$795.44&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-5204-fusr&quot;,
+            &quot;stock&quot;: 93,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 7,
+                &quot;name&quot;: &quot;Gia Flatley&quot;,
+                &quot;slug&quot;: &quot;gia-flatley&quot;
             }
         },
         {
             &quot;id&quot;: 8,
-            &quot;name&quot;: &quot;sed nobis quia&quot;,
-            &quot;description&quot;: &quot;Error officiis alias porro ea qui modi. Est quo natus quia ratione.&quot;,
-            &quot;price&quot;: &quot;780.397,28&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-3080-gman&quot;,
-            &quot;stock&quot;: 1,
+            &quot;name&quot;: &quot;eveniet sit quam&quot;,
+            &quot;description&quot;: &quot;Esse dolorem id assumenda officiis eum excepturi. Modi iste dolores quam voluptatem vero.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;45871&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$458.71&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-6460-mozz&quot;,
+            &quot;stock&quot;: 2,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 2,
+                &quot;name&quot;: &quot;Marilie Boehm&quot;,
+                &quot;slug&quot;: &quot;marilie-boehm&quot;
             }
         },
         {
             &quot;id&quot;: 9,
-            &quot;name&quot;: &quot;incidunt et nesciunt&quot;,
-            &quot;description&quot;: &quot;Cupiditate omnis aliquam placeat eius. Quia commodi cum soluta quaerat repudiandae eligendi quam. Sunt dolor pariatur odit voluptatem quia.&quot;,
-            &quot;price&quot;: &quot;190.016,84&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-0721-wosg&quot;,
-            &quot;stock&quot;: 23,
+            &quot;name&quot;: &quot;in sapiente dolorem&quot;,
+            &quot;description&quot;: &quot;Velit ut voluptas vel quibusdam ipsa ea. Deleniti vel aut assumenda et saepe molestiae. Nemo qui et laboriosam est.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;70245&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$702.45&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-7965-sgyn&quot;,
+            &quot;stock&quot;: 75,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 7,
+                &quot;name&quot;: &quot;Gia Flatley&quot;,
+                &quot;slug&quot;: &quot;gia-flatley&quot;
             }
         },
         {
             &quot;id&quot;: 10,
-            &quot;name&quot;: &quot;assumenda necessitatibus iusto&quot;,
-            &quot;description&quot;: &quot;Voluptatum qui aut vitae et. Iusto in explicabo dolores et et excepturi animi ipsam. Ipsum architecto debitis occaecati omnis quis possimus occaecati. Accusantium alias eum voluptatibus esse ullam modi nisi.&quot;,
-            &quot;price&quot;: &quot;651.408,67&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-8481-ucqa&quot;,
-            &quot;stock&quot;: 40,
+            &quot;name&quot;: &quot;nisi dicta ut&quot;,
+            &quot;description&quot;: &quot;Sed vel et distinctio reprehenderit ea aspernatur aut. Alias ab quia nam qui molestiae.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;58181&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$581.81&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-6012-xtut&quot;,
+            &quot;stock&quot;: 76,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 6,
+                &quot;name&quot;: &quot;Fannie D&#039;Amore&quot;,
+                &quot;slug&quot;: &quot;fannie-damore&quot;
             }
         },
         {
             &quot;id&quot;: 11,
-            &quot;name&quot;: &quot;veniam rerum ut&quot;,
-            &quot;description&quot;: &quot;Quia voluptatibus similique id vel ipsum. Repudiandae ut aliquid alias reiciendis neque. Similique quas placeat pariatur placeat. Debitis consequatur veritatis esse aut voluptas.&quot;,
-            &quot;price&quot;: &quot;935.946,70&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-8051-ygae&quot;,
-            &quot;stock&quot;: 81,
+            &quot;name&quot;: &quot;voluptas libero nemo&quot;,
+            &quot;description&quot;: &quot;Recusandae commodi impedit amet vel. Labore esse quos aut. Dolor ipsum excepturi officia necessitatibus libero consequatur animi. Vitae ea at sequi temporibus ab et alias.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;15888&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$158.88&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-8218-uwvh&quot;,
+            &quot;stock&quot;: 41,
             &quot;category&quot;: {
                 &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;name&quot;: &quot;Lina Lindgren&quot;,
+                &quot;slug&quot;: &quot;lina-lindgren&quot;
             }
         },
         {
             &quot;id&quot;: 12,
-            &quot;name&quot;: &quot;quo veniam laudantium&quot;,
-            &quot;description&quot;: &quot;Quis earum debitis sed consectetur laboriosam. Voluptates eveniet consequatur adipisci sequi repellat. Voluptatem porro illo molestiae voluptas dolorum dolor qui ut.&quot;,
-            &quot;price&quot;: &quot;551.074,81&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-2103-zyoj&quot;,
-            &quot;stock&quot;: 50,
+            &quot;name&quot;: &quot;aut corrupti quia&quot;,
+            &quot;description&quot;: &quot;Perferendis magnam provident quos enim tempore ut iure. Temporibus animi dolorem aut tempore nihil illo. Natus placeat ut reprehenderit saepe.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;96412&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$964.12&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-0456-rdqq&quot;,
+            &quot;stock&quot;: 14,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Shyanne Wiegand&quot;,
+                &quot;slug&quot;: &quot;shyanne-wiegand&quot;
             }
         },
         {
             &quot;id&quot;: 13,
-            &quot;name&quot;: &quot;facere deleniti sequi&quot;,
-            &quot;description&quot;: &quot;Totam et et aspernatur laborum molestiae et quia. Vero et nesciunt consequatur blanditiis laudantium ea. Eos voluptatem magnam ad ut.&quot;,
-            &quot;price&quot;: &quot;289.067,00&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-9094-scwp&quot;,
-            &quot;stock&quot;: 21,
+            &quot;name&quot;: &quot;dolores consequatur qui&quot;,
+            &quot;description&quot;: &quot;Nam earum blanditiis voluptatem ex est vitae. Ut odit occaecati placeat quae amet sit. Ex quam quaerat nulla ullam harum velit ipsam.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;25068&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$250.68&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-6026-vrka&quot;,
+            &quot;stock&quot;: 75,
             &quot;category&quot;: {
                 &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;name&quot;: &quot;Lina Lindgren&quot;,
+                &quot;slug&quot;: &quot;lina-lindgren&quot;
             }
         },
         {
             &quot;id&quot;: 14,
-            &quot;name&quot;: &quot;ad eos nobis&quot;,
-            &quot;description&quot;: &quot;Et sunt facilis at et. Nobis et consectetur et vel. Excepturi consequatur dolorem et minus ipsa. Vel beatae debitis dolorem dolorum consequuntur.&quot;,
-            &quot;price&quot;: &quot;185.297,10&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-1308-pmam&quot;,
-            &quot;stock&quot;: 13,
+            &quot;name&quot;: &quot;consequatur et sit&quot;,
+            &quot;description&quot;: &quot;Quo eum tempora odio quod nam ut. Et facilis ut cum voluptatum. Odio itaque quia a quo. Aperiam tempora doloribus pariatur velit aut deleniti.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;46426&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$464.26&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-2612-fdpw&quot;,
+            &quot;stock&quot;: 53,
             &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;id&quot;: 6,
+                &quot;name&quot;: &quot;Fannie D&#039;Amore&quot;,
+                &quot;slug&quot;: &quot;fannie-damore&quot;
             }
         },
         {
             &quot;id&quot;: 15,
-            &quot;name&quot;: &quot;in enim ut&quot;,
-            &quot;description&quot;: &quot;Saepe voluptas quo nostrum adipisci. Atque ab dolor at qui. Aut autem architecto voluptatibus quo. Sed accusantium tenetur earum error voluptas.&quot;,
-            &quot;price&quot;: &quot;274.779,07&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-3900-jgwo&quot;,
-            &quot;stock&quot;: 24,
-            &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;name&quot;: &quot;amet quis veritatis&quot;,
-            &quot;description&quot;: &quot;Et omnis beatae voluptas repudiandae exercitationem molestias. Nam voluptate numquam magni omnis quae possimus. Voluptas exercitationem voluptas quisquam adipisci. Eveniet ipsum ut aut dolorum ut.&quot;,
-            &quot;price&quot;: &quot;314.193,79&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-6778-ytkp&quot;,
-            &quot;stock&quot;: 17,
-            &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 17,
-            &quot;name&quot;: &quot;quam numquam mollitia&quot;,
-            &quot;description&quot;: &quot;Et aut quia assumenda alias repellendus. Libero aliquam labore ipsam rem. Porro ratione fuga error ducimus occaecati.&quot;,
-            &quot;price&quot;: &quot;268.850,50&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-3395-tikn&quot;,
-            &quot;stock&quot;: 3,
-            &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 18,
-            &quot;name&quot;: &quot;debitis in blanditiis&quot;,
-            &quot;description&quot;: &quot;Eos praesentium ea qui non dolorum. A deserunt et vero doloribus occaecati provident. Fugiat nobis aspernatur sint ut.&quot;,
-            &quot;price&quot;: &quot;592.709,19&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-8049-asge&quot;,
-            &quot;stock&quot;: 24,
-            &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;name&quot;: &quot;dolorem quisquam tempore&quot;,
-            &quot;description&quot;: &quot;Eligendi velit a qui laudantium. Sed neque omnis maxime. Nulla alias in ea at. Et laboriosam et velit architecto molestiae fugit cupiditate nam.&quot;,
-            &quot;price&quot;: &quot;519.619,82&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-2669-gxpg&quot;,
-            &quot;stock&quot;: 58,
-            &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;name&quot;: &quot;officiis inventore facilis&quot;,
-            &quot;description&quot;: &quot;Voluptatem ratione debitis unde tenetur repellat veritatis qui. Sunt eum exercitationem culpa nobis ut nesciunt. Iusto eum fuga tempore voluptas. In eum facere repudiandae distinctio voluptate delectus.&quot;,
-            &quot;price&quot;: &quot;395.309,31&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-6439-qrtu&quot;,
-            &quot;stock&quot;: 86,
-            &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 21,
-            &quot;name&quot;: &quot;nam numquam a&quot;,
-            &quot;description&quot;: &quot;Adipisci temporibus voluptatem dolorum fugit maiores accusantium. Eum ut commodi molestias repellendus dolorum facilis. Harum et temporibus veniam reiciendis sit voluptates quis. Qui veniam harum quia quas eos odio.&quot;,
-            &quot;price&quot;: &quot;284.229,62&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-4789-nojx&quot;,
-            &quot;stock&quot;: 0,
+            &quot;name&quot;: &quot;incidunt fuga nemo&quot;,
+            &quot;description&quot;: &quot;Aut aperiam excepturi et repudiandae est a et. Eum reiciendis earum quasi eum reiciendis enim nam. Earum iusto itaque sint et. Facilis voluptatem explicabo corrupti non voluptatem.&quot;,
+            &quot;price&quot;: {
+                &quot;amount&quot;: &quot;84222&quot;,
+                &quot;currency&quot;: &quot;USD&quot;,
+                &quot;formatted&quot;: &quot;$842.22&quot;
+            },
+            &quot;sku&quot;: &quot;SKU-5672-awul&quot;,
+            &quot;stock&quot;: 26,
             &quot;category&quot;: {
                 &quot;id&quot;: 4,
-                &quot;name&quot;: &quot;Dayana Frami&quot;,
-                &quot;slug&quot;: &quot;dayana-frami&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 22,
-            &quot;name&quot;: &quot;minima modi delectus&quot;,
-            &quot;description&quot;: &quot;Repellendus vero nulla in dolores. Consequatur nihil accusamus voluptatum vel. Ut dolorum est voluptatem magni rerum aut eum.&quot;,
-            &quot;price&quot;: &quot;604.590,43&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-4605-ksim&quot;,
-            &quot;stock&quot;: 0,
-            &quot;category&quot;: {
-                &quot;id&quot;: 4,
-                &quot;name&quot;: &quot;Dayana Frami&quot;,
-                &quot;slug&quot;: &quot;dayana-frami&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 23,
-            &quot;name&quot;: &quot;voluptas quia quas&quot;,
-            &quot;description&quot;: &quot;Et et et quisquam perferendis laborum. Deleniti alias laborum autem maiores. Est ab consequatur minus pariatur quis debitis.&quot;,
-            &quot;price&quot;: &quot;436.386,59&quot;,
-            &quot;currency&quot;: &quot;USD&quot;,
-            &quot;sku&quot;: &quot;SKU-6654-qydj&quot;,
-            &quot;stock&quot;: 0,
-            &quot;category&quot;: {
-                &quot;id&quot;: 4,
-                &quot;name&quot;: &quot;Dayana Frami&quot;,
-                &quot;slug&quot;: &quot;dayana-frami&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 24,
-            &quot;name&quot;: &quot;quis quia corporis&quot;,
-            &quot;description&quot;: &quot;Et cupiditate reiciendis perspiciatis occaecati. Et id asperiores voluptatem saepe. Nulla sed quis amet.&quot;,
-            &quot;price&quot;: &quot;491.825,40&quot;,
-            &quot;currency&quot;: &quot;ARS&quot;,
-            &quot;sku&quot;: &quot;SKU-8007-dcsm&quot;,
-            &quot;stock&quot;: 65,
-            &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 25,
-            &quot;name&quot;: &quot;qui eos aut&quot;,
-            &quot;description&quot;: &quot;Officiis iste consequatur amet in non. Sunt quos nemo enim quia quam non. Omnis et vel quibusdam ut perferendis fuga.&quot;,
-            &quot;price&quot;: &quot;847.788,13&quot;,
-            &quot;currency&quot;: &quot;ARS&quot;,
-            &quot;sku&quot;: &quot;SKU-5814-pzwi&quot;,
-            &quot;stock&quot;: 57,
-            &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
-            }
-        },
-        {
-            &quot;id&quot;: 26,
-            &quot;name&quot;: &quot;perferendis rerum et&quot;,
-            &quot;description&quot;: &quot;Quidem est corrupti est quo voluptates deleniti recusandae. Et qui tenetur dolore iusto quia nemo id vitae. Et inventore est eos quam vel quidem a autem. Eum voluptas sint aperiam. Qui sit amet ea facilis ea ipsa.&quot;,
-            &quot;price&quot;: &quot;429.946,90&quot;,
-            &quot;currency&quot;: &quot;ARS&quot;,
-            &quot;sku&quot;: &quot;SKU-5280-ffyo&quot;,
-            &quot;stock&quot;: 31,
-            &quot;category&quot;: {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-                &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-                &quot;children&quot;: []
+                &quot;name&quot;: &quot;Enid Raynor&quot;,
+                &quot;slug&quot;: &quot;enid-raynor&quot;
             }
         }
-    ]
+    ],
+    &quot;links&quot;: {
+        &quot;first&quot;: &quot;http://localhost/api/v1/products?page=1&quot;,
+        &quot;last&quot;: &quot;http://localhost/api/v1/products?page=2&quot;,
+        &quot;prev&quot;: null,
+        &quot;next&quot;: &quot;http://localhost/api/v1/products?page=2&quot;
+    },
+    &quot;meta&quot;: {
+        &quot;current_page&quot;: 1,
+        &quot;from&quot;: 1,
+        &quot;last_page&quot;: 2,
+        &quot;links&quot;: [
+            {
+                &quot;url&quot;: null,
+                &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
+                &quot;page&quot;: null,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/products?page=1&quot;,
+                &quot;label&quot;: &quot;1&quot;,
+                &quot;page&quot;: 1,
+                &quot;active&quot;: true
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/products?page=2&quot;,
+                &quot;label&quot;: &quot;2&quot;,
+                &quot;page&quot;: 2,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/products?page=2&quot;,
+                &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
+                &quot;page&quot;: 2,
+                &quot;active&quot;: false
+            }
+        ],
+        &quot;path&quot;: &quot;http://localhost/api/v1/products&quot;,
+        &quot;per_page&quot;: 15,
+        &quot;to&quot;: 15,
+        &quot;total&quot;: 26
+    }
 }</code>
  </pre>
     </span>
@@ -822,14 +726,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/v1/products/SKU-3647-dcez" \
+    --get "http://localhost/api/v1/products/architecto" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/products/SKU-3647-dcez"
+    "http://localhost/api/v1/products/architecto"
 );
 
 const headers = {
@@ -846,7 +750,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-v1-products--product_sku-">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (404):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -858,21 +762,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;aspernatur odit rem&quot;,
-        &quot;description&quot;: &quot;Nihil quidem repellendus placeat. Nemo nihil nostrum molestias. Ab voluptatem optio fugiat perferendis necessitatibus. Ut nobis velit hic. Voluptatem consequuntur neque corporis.&quot;,
-        &quot;price&quot;: &quot;697.116,85&quot;,
-        &quot;currency&quot;: &quot;USD&quot;,
-        &quot;sku&quot;: &quot;SKU-3647-dcez&quot;,
-        &quot;stock&quot;: 14,
-        &quot;category&quot;: {
-            &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;Ivah Wuckert&quot;,
-            &quot;slug&quot;: &quot;ivah-wuckert&quot;,
-            &quot;children&quot;: []
-        }
-    }
+    &quot;message&quot;: &quot;No query results for model [Src\\Products\\Domain\\Models\\Product] architecto&quot;
 }</code>
  </pre>
     </span>
@@ -952,10 +842,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="product_sku"                data-endpoint="GETapi-v1-products--product_sku-"
-               value="SKU-3647-dcez"
+               value="architecto"
                data-component="url">
     <br>
-<p>Example: <code>SKU-3647-dcez</code></p>
+<p>Example: <code>architecto</code></p>
             </div>
                     </form>
 

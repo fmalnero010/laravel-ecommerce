@@ -57,4 +57,9 @@ final class UserFactory extends Factory
             $user->assignRole($role);
         });
     }
+
+    public function hasCarts(?CartFactory $cartFactory = null): self
+    {
+        return $this->has($cartFactory ?? CartFactory::new(), 'carts');
+    }
 }
